@@ -1,500 +1,518 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "additionalProperties": false,
-  "definitions": {
-    "iso8601": {
-      "type": "string",
-      "description": "e.g. 2014-06-29",
-      "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
-    }
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Erik Lenaerts",
+    "label": "Digital eXperience Architect @ Digipolis, Digital Business Coach @ Castles & Coffee",
+    "image": "",
+    "email": "erik.lenaerts@line20.be",
+    "phone": "0032470850138",
+    "url": "https://www.digipolisantwerpen.be/",
+    "summary": "From day one in my professional career, I started out working for as many companies as possible. I wanted to learn their business, their problems, opportunities, and the people behind. \n\nToday I'm fortunate to combine all my learnings when assisting companies who are venturing into the digital world. Together we design the details of new (digital) products or services. From here on, I help turn these dreams into practical and pragmatic executable steps. \nI believe strongly in putting good values upfront; solid business will flow naturally from it. In every step I ask myself the question; does it add value. Will it make the users, the customers … the life of people better and more enjoyable.",
+    "location": {
+      "countryCode": "US",
+      "address": "Berlarij 9\n2500 Lier"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "eriklenaerts",
+        "url": "https://www.linkedin.com/in/eriklenaerts/"
+      },
+      {
+        "network": "Twitter",
+        "username": "eriklenaerts",
+        "url": "https://twitter.com/eriklenaerts"
+      }
+    ]
   },
-  "properties": {
-    "$schema": {
-      "type": "string",
-      "description": "link to the version of the schema that can validate the resume",
-      "format": "uri"
+  "work": [
+    {
+      "name": "Castles & Coffee",
+      "position": "Digital Business Coach",
+      "startDate": "2018-01-31",
+      "highlights": [],
+      "summary": "In Castles & Coffee I help companies small to medium sized in 3 main areas:\n- Going from an idea to a concept to a business\n- Story creation for products & services\n- Pragmatic and agile organisational structures \nHave a look at the site of castles & Coffee at www.castlescoffee.be",
+      "url": "https://www.linkedin.com/company/castles-coffee/",
+      "location": "Antwerp Area, Belgium"
     },
-    "basics": {
-      "type": "object",
-      "additionalProperties": true,
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "label": {
-          "type": "string",
-          "description": "e.g. Web Developer"
-        },
-        "image": {
-          "type": "string",
-          "description": "URL (as per RFC 3986) to a image in JPEG or PNG format"
-        },
-        "email": {
-          "type": "string",
-          "description": "e.g. thomas@gmail.com",
-          "format": "email"
-        },
-        "phone": {
-          "type": "string",
-          "description": "Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923"
-        },
-        "url": {
-          "type": "string",
-          "description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
-          "format": "uri"
-        },
-        "summary": {
-          "type": "string",
-          "description": "Write a short 2-3 sentence biography about yourself"
-        },
-        "location": {
-          "type": "object",
-          "additionalProperties": true,
-          "properties": {
-            "address": {
-              "type": "string",
-              "description": "To add multiple address lines, use \n. For example, 1234 Glücklichkeit Straße\nHinterhaus 5. Etage li."
-            },
-            "postalCode": {
-              "type": "string"
-            },
-            "city": {
-              "type": "string"
-            },
-            "countryCode": {
-              "type": "string",
-              "description": "code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN"
-            },
-            "region": {
-              "type": "string",
-              "description": "The general region where you live. Can be a US state, or a province, for instance."
-            }
-          }
-        },
-        "profiles": {
-          "type": "array",
-          "description": "Specify any number of social networks that you participate in",
-          "additionalItems": false,
-          "items": {
-            "type": "object",
-            "additionalProperties": true,
-            "properties": {
-              "network": {
-                "type": "string",
-                "description": "e.g. Facebook or Twitter"
-              },
-              "username": {
-                "type": "string",
-                "description": "e.g. neutralthoughts"
-              },
-              "url": {
-                "type": "string",
-                "description": "e.g. http://twitter.example.com/neutralthoughts",
-                "format": "uri"
-              }
-            }
-          }
-        }
-      }
+    {
+      "name": "Digipolis",
+      "position": "Digital eXperience Architect",
+      "startDate": "2017-10-31",
+      "highlights": [],
+      "summary": "Digipolis is stepping up its game to improve the Digital Experience for everyone that lives, works, visits and studies in Antwerp. With the new Digital eXperience Platform initiative, we want to deliver the building blocks behind an improved digital city for its people. This foundation will drive future interactions between the people and the smart city. \n\nI'm lucky to part of this team where we put people - and how they experience the city - in the forefront. In this job, I can combine my architectural, marketing and user-centred experience skills all in one effort.",
+      "url": "https://www.linkedin.com/company/digipolis/",
+      "location": "Antwerp Area, Belgium"
     },
-    "work": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Facebook"
-          },
-          "location": {
-            "type": "string",
-            "description": "e.g. Menlo Park, CA"
-          },
-          "description": {
-            "type": "string",
-            "description": "e.g. Social Media Company"
-          },
-          "position": {
-            "type": "string",
-            "description": "e.g. Software Engineer"
-          },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://facebook.example.com",
-            "format": "uri"
-          },
-          "startDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "endDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "summary": {
-            "type": "string",
-            "description": "Give an overview of your responsibilities at the company"
-          },
-          "highlights": {
-            "type": "array",
-            "description": "Specify multiple accomplishments",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-            }
-          }
-        }
-      }
+    {
+      "name": "Digipolis",
+      "position": "Enterprise Architect",
+      "startDate": "2017-01-31",
+      "endDate": "2017-10-30",
+      "highlights": [],
+      "summary": "Guiding Digipolis and its customer, the city of Antwerp in their digital evolution. Digipolis is going full force ahead and innovates in the space of blockchain, IoT and the API ecosystems. \n\nBridging the gap between the businesses in the city of Antwerp, the customer, and Digipolis is one of the key jobs I perform here.  Additionally, I coach business analysts, business architects, and others into the intricacies of today and tomorrows technology landscape.",
+      "url": "https://www.linkedin.com/company/digipolis/",
+      "location": "Antwerpen, Flanders, Belgium"
     },
-    "volunteer": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "organization": {
-            "type": "string",
-            "description": "e.g. Facebook"
-          },
-          "position": {
-            "type": "string",
-            "description": "e.g. Software Engineer"
-          },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://facebook.example.com",
-            "format": "uri"
-          },
-          "startDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "endDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "summary": {
-            "type": "string",
-            "description": "Give an overview of your responsibilities at the company"
-          },
-          "highlights": {
-            "type": "array",
-            "description": "Specify accomplishments and achievements",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Increased profits by 20% from 2011-2012 through viral advertising"
-            }
-          }
-        }
-      }
+    {
+      "name": "Digipolis",
+      "position": "Product Owner",
+      "startDate": "2016-02-28",
+      "endDate": "2016-12-31",
+      "highlights": [],
+      "summary": "I'm working in a team where we launch ACPaaS or Antwerp City Platform as a Service. If people ask me what it is, I tell them, its about wrapping Antwerp in API's.\nI contribute by being a Product Owner for several engines (API's if you want). Next to this PO role I help in solution designs and assist in various related projects depending on ACPaaS. Last but not least, I lead some of the marketing initiatives for ACPaaS.",
+      "url": "https://www.linkedin.com/company/digipolis/",
+      "location": "Antwerp Area, Belgium"
     },
-    "education": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "institution": {
-            "type": "string",
-            "description": "e.g. Massachusetts Institute of Technology"
-          },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://facebook.example.com",
-            "format": "uri"
-          },
-          "area": {
-            "type": "string",
-            "description": "e.g. Arts"
-          },
-          "studyType": {
-            "type": "string",
-            "description": "e.g. Bachelor"
-          },
-          "startDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "endDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "score": {
-            "type": "string",
-            "description": "grade point average, e.g. 3.67/4.0"
-          },
-          "courses": {
-            "type": "array",
-            "description": "List notable courses/subjects",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. H1302 - Introduction to American history"
-            }
-          }
-        }
-      }
+    {
+      "name": "Line20",
+      "position": "Owner",
+      "startDate": "2010-01-31",
+      "highlights": [],
+      "summary": "Digital coach, Enterprise Architect, Digital Marketing, growth hacking & culture designer.\nLove guiding companies and into a digital world whilst working in the meanwhile on a solid culture foundation. Assist in bringing these ideas into the market and designing the org structure to create happy workspaces.",
+      "url": "https://www.castlescoffee.be",
+      "location": "Antwerp Area, Belgium"
     },
-    "awards": {
-      "type": "array",
-      "description": "Specify any awards you have received throughout your professional career",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "title": {
-            "type": "string",
-            "description": "e.g. One of the 100 greatest minds of the century"
-          },
-          "date": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "awarder": {
-            "type": "string",
-            "description": "e.g. Time Magazine"
-          },
-          "summary": {
-            "type": "string",
-            "description": "e.g. Received for my work with Quantum Physics"
-          }
-        }
-      }
+    {
+      "name": "Narato",
+      "position": "Culture Designer & Digital Marketeer",
+      "startDate": "2016-01-31",
+      "endDate": "2020-10-31",
+      "highlights": [],
+      "summary": "It is my goal to design, shape and facilitate the culture within Narato during its startup period. People, planet and profit are considered equal goals. We strive to create a culture of openess, transparancy and self-organising people that create innovative solutions. Composing software solutions that make the life of people more enjoyable is the purpose of the organisation.\n\nIn my second role, I want to setup and facilitate a content driven marketing environment. By offering quality content to our audience, we hope to inspire them just about enough for them to contact us and grab a coffee. From there on, it's about dreaming together and figuring out a common solution.",
+      "url": "https://www.linkedin.com/company/narato/"
     },
-    "certificates": {
-      "type": "array",
-      "description": "Specify any certificates you have received throughout your professional career",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Certified Kubernetes Administrator"
-          },
-          "date": {
-            "type": "string",
-            "description": "e.g. 1989-06-12",
-            "format": "date"
-          },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://example.com",
-            "format": "uri"
-          },
-          "issuer": {
-            "type": "string",
-            "description": "e.g. CNCF"
-          }
-        }
-      }
+    {
+      "name": "E2 Partners",
+      "position": "Digital marketeer",
+      "startDate": "2015-01-31",
+      "endDate": "2015-12-31",
+      "highlights": [],
+      "summary": "Currently co-designing the new business initiatives within E2 Partners. Helping them out with their business models and their value propositions. Helping them build their brand and culture as they grow their businesses.\n\nConstantly looking out for new trends in the digital marketing space. Learning on the one end and experimenting it on the other within the E2 initiatives in a constant loop of improvement.\n\nThe E2 initiatives are \nwww.kapture.be\nwww.pulsehcs.be\nwww.narato.be",
+      "url": "https://www.linkedin.com/company/e2-partners/"
     },
-    "publications": {
-      "type": "array",
-      "description": "Specify your publications through your career",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. The World Wide Web"
-          },
-          "publisher": {
-            "type": "string",
-            "description": "e.g. IEEE, Computer Magazine"
-          },
-          "releaseDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "url": {
-            "type": "string",
-            "description": "e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html",
-            "format": "uri"
-          },
-          "summary": {
-            "type": "string",
-            "description": "Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML."
-          }
-        }
-      }
+    {
+      "name": "E2 Partners",
+      "position": "Unit Manager 2Improve",
+      "startDate": "2013-01-31",
+      "endDate": "2014-12-31",
+      "highlights": [],
+      "summary": "Guiding a group of Solution and Enterprise Architect consultants.",
+      "url": "https://www.linkedin.com/company/e2-partners/"
     },
-    "skills": {
-      "type": "array",
-      "description": "List out your professional skill-set",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Web Development"
-          },
-          "level": {
-            "type": "string",
-            "description": "e.g. Master"
-          },
-          "keywords": {
-            "type": "array",
-            "description": "List some keywords pertaining to this skill",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. HTML"
-            }
-          }
-        }
-      }
+    {
+      "name": "E2 Partners",
+      "position": "Senior Consultant",
+      "startDate": "2009-02-28",
+      "endDate": "2013-01-31",
+      "highlights": [],
+      "summary": "e2 is a young dynamic company with lots of experienced people. We aim to provide unbiased assistance in the field of software solutions and infrastructure. Our goal is to get the business closer to the IT and the other way around.",
+      "url": "https://www.linkedin.com/company/e2-partners/"
     },
-    "languages": {
-      "type": "array",
-      "description": "List any other languages you speak",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "language": {
-            "type": "string",
-            "description": "e.g. English, Spanish"
-          },
-          "fluency": {
-            "type": "string",
-            "description": "e.g. Fluent, Beginner"
-          }
-        }
-      }
+    {
+      "name": "Wolters Kluwer Belgium",
+      "position": "Enterprise Architect",
+      "startDate": "2012-04-30",
+      "endDate": "2015-04-30",
+      "highlights": [],
+      "summary": "Working in Kluwer's content division on a program where the goals are to improve operational efficiency, faster GTM. In the program I aided to take a continuous business improvement approach with translations towards the IT landscape.",
+      "url": "https://www.linkedin.com/company/wolters-kluwer-belgium/",
+      "location": "Mechelen"
     },
-    "interests": {
-      "type": "array",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Philosophy"
-          },
-          "keywords": {
-            "type": "array",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Friedrich Nietzsche"
-            }
-          }
-        }
-      }
+    {
+      "name": "AG Insurance",
+      "position": "Enterprise Architect",
+      "startDate": "2012-01-31",
+      "endDate": "2012-04-30",
+      "highlights": [],
+      "summary": "I worked on defining the governance approach for AG Insurance new internet, intranet and extranet strategy.",
+      "url": "https://www.linkedin.com/company/aginsurance/"
     },
-    "references": {
-      "type": "array",
-      "description": "List references you have received",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. Timothy Cook"
-          },
-          "reference": {
-            "type": "string",
-            "description": "e.g. Joe blogs was a great employee, who turned up to work at least once a week. He exceeded my expectations when it came to doing nothing."
-          }
-        }
-      }
+    {
+      "name": "Truvo",
+      "position": "Enterprise Architect",
+      "startDate": "2009-02-28",
+      "endDate": "2012-01-31",
+      "highlights": [],
+      "summary": "I started the first year in the field of Sales Force Automation. As Architect/Advisor where I delivered structure in the application life cycle of the SFA software. \nIn the second year and onwards, the focus changed to more enterprise oriented architecture work.",
+      "url": "https://www.linkedin.com/company/goudengidsbe-pagesdorbe/"
     },
-    "projects": {
-      "type": "array",
-      "description": "Specify career projects",
-      "additionalItems": false,
-      "items": {
-        "type": "object",
-        "additionalProperties": true,
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "e.g. The World Wide Web"
-          },
-          "description": {
-            "type": "string",
-            "description": "Short summary of project. e.g. Collated works of 2017."
-          },
-          "highlights": {
-            "type": "array",
-            "description": "Specify multiple features",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Directs you close but not quite there"
-            }
-          },
-          "keywords": {
-            "type": "array",
-            "description": "Specify special elements involved",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. AngularJS"
-            }
-          },
-          "startDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "endDate": {
-            "$ref": "#/definitions/iso8601"
-          },
-          "url": {
-            "type": "string",
-            "format": "uri",
-            "description": "e.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html"
-          },
-          "roles": {
-            "type": "array",
-            "description": "Specify your role on this project or in company",
-            "additionalItems": false,
-            "items": {
-              "type": "string",
-              "description": "e.g. Team Lead, Speaker, Writer"
-            }
-          },
-          "entity": {
-            "type": "string",
-            "description": "Specify the relevant company/entity affiliations e.g. 'greenpeace', 'corporationXYZ'"
-          },
-          "type": {
-            "type": "string",
-            "description": " e.g. 'volunteering', 'presentation', 'talk', 'application', 'conference'"
-          }
-        }
-      }
+    {
+      "name": "MSP",
+      "position": "Solution Consultant",
+      "startDate": "2005-06-30",
+      "endDate": "2009-02-28",
+      "highlights": [],
+      "summary": "As a Solution Consultant I help customers in the early stages of their projects. The goal is to turn their problems into solutions according to today's industry standards.\n\nIn the job I provide assessments of their current legacy systems, define together the goal and how to reach it. This includes lots of presentations, performing audits, defining architectures and grinding for business requirements.\n\nI perform this activities in 2 distinct domains:\n- Business Intelligence\n- Microsoft Modernisation (wrapping Microsoft around legacy midrange/mainframe environments)",
+      "url": "https://www.linkedin.com/company/msp/"
     },
-    "meta": {
-      "type": "object",
-      "description": "The schema version and any other tooling configuration lives here",
-      "additionalProperties": true,
-      "properties": {
-        "canonical": {
-          "type": "string",
-          "description": "URL (as per RFC 3986) to latest version of this document",
-          "format": "uri"
-        },
-        "version": {
-          "type": "string",
-          "description": "A version field which follows semver - e.g. v1.0.0"
-        },
-        "lastModified": {
-          "type": "string",
-          "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
-        }
-      }
+    {
+      "name": "Amadeus",
+      "position": "Unit Manager",
+      "startDate": "2002-10-31",
+      "endDate": "2005-06-30",
+      "highlights": [],
+      "summary": "Responsible for the Development of ACEmis Business Intelligence Software.",
+      "url": "https://www.linkedin.com/company/amadeus/"
+    },
+    {
+      "name": "Advanced Solutions",
+      "position": "CTO",
+      "startDate": "2000-03-31",
+      "endDate": "2002-10-31",
+      "highlights": [],
+      "summary": "Co-founder & CTO of Advanced Solutions, a software company focused on Mobile Information Integration and Internet Solutions & Services.",
+      "url": "https://www.linkedin.com/company/advanced-solutions/"
+    },
+    {
+      "name": "Dolmen",
+      "position": "Analyst Programmer",
+      "startDate": "1998-07-31",
+      "endDate": "2000-03-31",
+      "highlights": [],
+      "summary": "Working as c++ developer for various customers like Johnson & Johnson, Marlux, etc.",
+      "url": "https://www.linkedin.com/company/inetum-realdolmen/"
     }
-  },
-  "title": "Resume Schema",
-  "type": "object"
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "The Unit",
+      "area": "TOGAF - Enterprise Architecture",
+      "studyType": "Level 1 TOGAF",
+      "startDate": "2011-12-31",
+      "endDate": "2011-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "VTIB",
+      "area": "Industrial Computer Sciences",
+      "studyType": "high school",
+      "startDate": "1987-09-30",
+      "endDate": "1994-07-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "'Karel de Grote' Hogeschool Antwerpen",
+      "area": "Marketing",
+      "studyType": "Post graduate degree",
+      "startDate": "1998-12-31",
+      "endDate": "1999-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Karel de Grote' Hogeschool Antwerpen",
+      "area": "Computer Science",
+      "studyType": "Professional bachelor",
+      "startDate": "1994-12-31",
+      "endDate": "1998-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "TOGAF level 1",
+      "issuer": "Prometric"
+    },
+    {
+      "name": "Business Model Generation Workshop & Masterclass",
+      "issuer": "CVTrust",
+      "startDate": "2017-09-30",
+      "url": "https://www.cvtrust.com/SmartCertificate/?mhNoGg4qIVjQGIrTxuQAiwVu5PAt0PnYx%2bKaSKUob1kRIzzId39RKBk0pSS9gQdY"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Enterprise Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IT Governance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Solution Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Application Lifecycle Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Narato",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Digipolis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "EAI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Integration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Business Alignment",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Consultancy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": ".NET",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Integration Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Devices",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "ITIL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Shotokan Karate",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Enterprise Software",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Strategy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Services",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Business Intelligence",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IT Strategy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SOA",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "E-commerce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Application Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IT Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Consulting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IT architectures",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Consultants",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Pre-sales",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "UML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Architectures",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Governance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TOGAF",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "Dutch"
+    },
+    {
+      "fluency": "Full Professional",
+      "language": "English"
+    },
+    {
+      "fluency": "Elementary",
+      "language": "French"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "John Milton",
+      "reference": "Erik is an eceptional individual, full of life and drive and commitment and a highly talented Enterprise Architect who is a top class communicator and diplomat. He can bring together people from distant entrenched positions to seek a common architecture that meets the real business needs of an organization. If you are looking for someone who can bring root and branch changes to your landscape, without leaving a tangled spaghetti architecture behind, he is your man."
+    },
+    {
+      "name": "Anja Ramaekers",
+      "reference": "I had the pleasure of working with Erik during the creation of a strategic plan to turn around and help transform the business & IT.  He is a hard working and trustful professional who can fluently switch between addressing business challenges and making translations to IT topics. Erik has many great ideas, knowledge & vision on transformation and enterprise architectural topics.  \r\nI appreciated in particular his collaborative attitude and his role as facilitator which he assumed in a very natural way to make sure that all different opinions and approaches were discussed.  He is someone you can count on and I would recommend Erik as a highly professional person who can work on all levels of the organisation to make the difference and carry on in situations where other people tend to give up."
+    },
+    {
+      "name": "Gunter Gheysens",
+      "reference": "I worked with Erik on several implementation projects within Truvo. He, as an architect for the front office applications, myself as an architect for the back office apps. Erik has a strong mindset, knows what he's doing and certainly has very good technical skills.  Notwithstanding, he is a good listener as well. I appriciated his openness and drive to meet business targets and requirements. Due to restructuring, our cooperation was ended  but I'm already looking forward to work with Erik again.... somewhere, sometime."
+    },
+    {
+      "name": "Geoffrey Smolders",
+      "reference": "I've placed Erik at Truvo quite a while ago as a Team Lead / Architect for a .NET team existing of Truvo & Cronos consultants. Erik was a 100% match for this job. He is truly a good architect with good vision and not afraid to make his own hands dirty and develop along with the team. He is also very communicative and can easily relate and understand the needs of the business. I wouldn't hesitate to put Erik on any other Lead Developer or Architect role in the future."
+    },
+    {
+      "name": "Wouter E. M. Berben",
+      "reference": "Erik was my mentor when I was an intern at MSP. He told me some tricks I've not seen before and that does not reflect much on me but a lot on Erik. He's a the one to ask for an oppinion about the work you've have done.\r\n\r\nThank you Erik."
+    },
+    {
+      "name": "Sven Vanoirbeek",
+      "reference": "During my internship Erik was my technical mentor. Eric has very good understanding of software engineering. He always gave me great tips and advice on how to improve my project. Thank you!"
+    },
+    {
+      "name": "Rik Doclo",
+      "reference": "Having known Eric already from previous assignments we had a real opportunity to work closely at Tyco Fire & Security Services. Eric is not only on personal level a highly appreciated individual, also as a professional he scores way above average !"
+    },
+    {
+      "name": "Ken Vleminckx",
+      "reference": "I worked together with Erik for three years. I very much enjoyed working together with him. He's very result-driven and dynamic in his job. Also, he knows how to deal with difficult customers/projects."
+    }
+  ],
+  "projects": [
+    {
+      "name": "IT Partner Selection for Smartmat",
+      "startDate": "2016-04-30",
+      "summary": "Rather small project where I helped out https://www.smartmat.be/nl/ in their search for a new partner of their IT backbone. I'd like to say that I've used an agile process for getting the right partner in a couple of weeks time.",
+      "url": "https://www.foodbag.be",
+      "endDate": "2016-04-30"
+    },
+    {
+      "name": "API-based publishing strategy for Sanoma Media Belgium",
+      "startDate": "2014-06-30",
+      "summary": "Sanoma asked us to help lay the foundations for their API-based publishing activities. We coached IT architects and developers through a paradigm shift from large-scale complex IT service integrations to the outside-in thinking that APIs require.",
+      "url": "http://www.nascom.be/work/api-based-publishing-strategy-sanoma",
+      "endDate": "2014-12-31"
+    },
+    {
+      "name": "TruST @ TRUVO Belgium",
+      "startDate": "2010-04-30",
+      "summary": "Situation 2 (TruST)\nTruST is the name of the sales application used by the commercial agent. It's development was done in an SCRUM/Agile environment. My task was to manage and improve the test quality and test capability in this agile environment.",
+      "url": "https://www.goudengids.be",
+      "endDate": "2011-02-28"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
 }
